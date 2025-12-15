@@ -32,10 +32,7 @@ jobs:
       - name: Install dependencies
         run: flutter pub get 
       
-        # 5. Run static analysis (lint checks)
-      - name: Analyze code
-        run: flutter analyze || true
-
+        
       # 6. Run unit tests
       - name: Run tests
         run: flutter test --coverage
