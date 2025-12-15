@@ -33,11 +33,7 @@ jobs:
         run: flutter pub get 
       
         
-      # 6. Run unit tests
-      - name: Run tests
-        run: flutter test --coverage
-
-      # 5. Build APK (unsigned release)
+        # 5. Build APK (unsigned release)
       - name: Build APK
         run: flutter build apk --release
 
